@@ -1,0 +1,26 @@
+apiVersion: v1
+kind: ReplicationController
+metadata:
+  name: frontend
+spec:
+  replicas: 1
+  selector:
+    name: frontend
+  template:
+    metadata:
+      labels:
+        name: frontend
+    spec:
+      containers:
+      - name: frontend
+        image: gcr.io/<project-id>/frontend:latest
+        ports:
+        - containerPort: 5000
+        resources:
+          limits:
+            cpu: "0.1"
+        command:
+        - "/gopath/src/github.com/rlguarino/shortener/frontend/frontend"
+        - "-c" 
+        - "/gopath/src/github.com/rlguarino/shortener/kubernetes-example/frontend-config.json"
+

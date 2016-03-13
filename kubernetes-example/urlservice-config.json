@@ -1,0 +1,7 @@
+{
+    "redis": {
+        "master_name": "mymaster",
+        "sentinel_addrs": "redis-sentinel:26379"
+    },
+    "listen_addr" :":5000"
+}

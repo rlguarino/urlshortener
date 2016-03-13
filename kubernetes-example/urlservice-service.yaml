@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    name: urlservice
+    role: service
+  name: urlservice
+spec:
+  ports:
+    - port: 5000
+      targetPort: 5000
+  selector:
+    name: "urlservice"

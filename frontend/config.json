@@ -1,0 +1,6 @@
+{
+    "listen_addr":":5000",
+    "root_url":"localhost:5000",
+    "url_service_addr": "http://localhost:5001",
+    "stat_service_addr" : "http://localhost:5002"
+}

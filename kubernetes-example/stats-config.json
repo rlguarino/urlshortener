@@ -1,0 +1,8 @@
+{
+    "url_service_addr": "http://urlservice:5000",
+    "listen_addr": ":5000",
+    "mongo": {
+        "addrs": "mongo",
+        "db_name": "stats"
+    }
+}

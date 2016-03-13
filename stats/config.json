@@ -1,0 +1,8 @@
+{
+    "url_service_addr": "http://localhost:5001",
+    "listen_addr": ":5000",
+    "mongo": {
+        "addrs": "localhost",
+        "db_name": "stats"
+    }
+}

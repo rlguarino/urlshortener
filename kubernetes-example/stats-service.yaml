@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    name: stats
+    role: service
+  name: statservice
+spec:
+  ports:
+    - port: 5000
+      targetPort: 5000
+  selector:
+    name: "stats"

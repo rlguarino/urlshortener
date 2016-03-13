@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    name: frontend
+    role: service
+  name: frontend
+spec:
+  type : LoadBalancer
+  ports:
+    - port: 5000
+      targetPort: 5000
+  selector:
+    name: "frontend"
